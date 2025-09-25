@@ -1,0 +1,39 @@
+.home {
+  max-width: 800px;
+}
+
+.home .cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--red-to-pink-to-purple-horizontal-gradient);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.highlights {
+  margin-top: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background: white;
+}
+
+.callout {
+  margin-top: 2rem;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
