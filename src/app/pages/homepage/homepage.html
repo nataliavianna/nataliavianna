@@ -1,47 +1,76 @@
-<app-header></app-header>
+<nz-layout class="app-layout">
 
-<section class="home">
-  <h1>Olá, eu sou a Natalia Vianna</h1>
-  <p>Product Manager focada em entregar valor com estratégia, pesquisa e execução impecável.</p>
-  <ul>
-    <li>+8 anos liderando produtos digitais</li>
-    <li>Experiência em discovery contínuo, roadmap e OKRs</li>
-    <li>Trabalho próximo com engenharia, design e dados</li>
-  </ul>
-  <a routerLink="/projects" class="cta">Ver projetos</a>
-</section>
+  <!-- Hero Section -->
+  <nz-content>
+    <section class="hero">
+      <div class="hero-container">
+        <img src="assets/natalia-photo.jpg" alt="Natalia Vianna" class="hero-photo" />
+        <div class="hero-text">
+          <h1>Natalia Vianna</h1>
+          <h2>Product Manager • SaaS • Fintech • Impact</h2>
+          <div class="hero-buttons">
+            <a nz-button nzType="primary" routerLink="/projects">View Projects</a>
+            <a nz-button href="mailto:natalia.viannao@gmail.com">Contact</a>
+            <a nz-button nzType="default" href="https://linkedin.com/in/nataliavianna" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="highlights">
-  <h2>Como posso ajudar</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Estratégia e OKRs</h3>
-      <p>Definição de visão, metas e métricas de produto alinhadas ao negócio.</p>
-    </div>
-    <div class="card">
-      <h3>Discovery Contínuo</h3>
-      <p>Entrevistas, experimentos e validação rápida para aprender antes de construir.</p>
-    </div>
-    <div class="card">
-      <h3>Entrega com Impacto</h3>
-      <p>Roadmap claro, priorização e shipping frequente em parceria com engenharia.</p>
-    </div>
-  </div>
-</section>
+    <!-- About Section -->
+    <section class="about">
+      <nz-row [nzGutter]="16" nzAlign="middle">
+        <nz-col [nzXs]="24" [nzMd]="12">
+          <img src="assets/about-image.jpg" alt="About Natalia" class="about-image" />
+        </nz-col>
+        <nz-col [nzXs]="24" [nzMd]="12">
+          <nz-card nzTitle="About me">
+            <p>
+              I am a Product Manager with 7+ years of experience in digital products and technology.
+              Strong background in fintech, social impact and SaaS, leading cross-functional teams and
+              connecting business strategy to real user needs.
+            </p>
+            <p>
+              My journey blends Agile methods (Scrum, Kanban, OKRs) with a data-driven mindset to
+              prioritize initiatives, scale products and drive measurable results. I have hands-on
+              experience with discovery, roadmaps, stakeholder management and performance metrics that
+              sustain continuous product evolution.
+            </p>
+          </nz-card>
+        </nz-col>
+      </nz-row>
+    </section>
 
-<section class="callout">
-  <h2>Resultados</h2>
-  <ul>
-    <li>+25% retenção em plataforma SaaS com insights acionáveis</li>
-    <li>+18% GMV após reposicionamento de marketplace B2B</li>
-    <li>Redução de 30% no time-to-market com melhoria de processo</li>
-  </ul>
-</section>
+    <!-- Skills / Keywords -->
+    <section class="skills">
+      <nz-card nzTitle="Core Skills & Keywords">
+        <div class="tags-container">
+          <nz-tag *ngFor="let tag of tags" nzColor="purple">{{ tag }}</nz-tag>
+        </div>
+      </nz-card>
+    </section>
 
-<section class="contact">
-  <h2>Vamos conversar</h2>
-  <p>Aberta a desafios onde produto é alavanca de crescimento.</p>
-  <a class="cta" href="mailto:contato@natalia.vianna" target="_blank" rel="noopener">Entrar em contato</a>
-</section>
+    <!-- Key Achievements -->
+    <section class="achievements">
+      <nz-row [nzGutter]="16">
+        <nz-col [nzXs]="24" [nzMd]="12" *ngFor="let achievement of achievements">
+          <nz-card [nzTitle]="achievement.title" class="achievement-card">
+            <p>{{ achievement.description }}</p>
+          </nz-card>
+        </nz-col>
+      </nz-row>
+    </section>
 
-<app-footer></app-footer>
+    <!-- Contact / CTA -->
+    <section class="contact-cta">
+      <nz-card nzTitle="Get in touch" class="contact-card">
+        <p>Email: <a href="mailto:natalia.viannao@gmail.com">natalia.viannao@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/nataliavianna" target="_blank" rel="noopener">linkedin.com/in/nataliavianna</a></p>
+        <p>Phone: <a href="tel:+5521996547228">+55 (21) 99654-7228</a></p>
+      </nz-card>
+    </section>
+
+  </nz-content>
+
+  <app-footer></app-footer>
+</nz-layout>

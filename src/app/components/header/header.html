@@ -1,7 +1,15 @@
-<header class="site-header">
-  <nav class="nav">
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
-    <a routerLink="/projects" routerLinkActive="active">Projetos</a>
-    <a routerLink="/about" routerLinkActive="active">Sobre</a>
-  </nav>
-</header>
+<nz-layout class="app-layout">
+  <nz-header>
+    <div class="logo">
+      <a>
+        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
+        <h1>NG-ZORRO</h1>
+      </a>
+    </div>
+    <ul nz-menu class="top-nav" nzTheme="dark" nzMode="horizontal">
+      <li nz-menu-item routerLinkActive="ant-menu-item-selected" routerLink="/welcome">Home</li>
+      <li nz-menu-item>About</li>
+      <li nz-menu-item>Projects</li>
+    </ul>
+  </nz-header>
+</nz-layout>
