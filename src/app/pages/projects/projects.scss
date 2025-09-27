@@ -1,0 +1,78 @@
+
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 64px;
+
+  .image-wrap {
+    flex: 1;
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+      display: block;
+    }
+  }
+
+  .text-wrap {
+    flex: 1;
+    max-width: 500px;
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #666;
+      margin: 0 0 18px;
+    }
+
+    .desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #222;
+      margin-bottom: 22px;
+    }
+
+    a[nz-button] {
+      padding: 0 20px;
+      min-height: 44px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 18px rgba(20, 20, 20, 0.06);
+    }
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+    .text-wrap {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .project-card {
+    flex-direction: column !important;
+    text-align: center;
+
+    .text-wrap {
+      max-width: 100%;
+      text-align: center !important;
+    }
+  }
+}
+
+
+.projects-wrap {
+  max-width:1200px;
+  margin: 0 auto;
+}

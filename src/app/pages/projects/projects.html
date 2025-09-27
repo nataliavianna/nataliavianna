@@ -1,18 +1,29 @@
 <app-header></app-header>
-<section class="projects container">
-  <h1>Projetos em Destaque</h1>
-  <article class="project">
-    <h2>Plataforma de Insights de Clientes</h2>
-    <p>Conduzi discovery e priorização que resultou em +25% de retenção.</p>
-    <ul>
-      <li>Alinhei stakeholders e defini KPIs claros</li>
-      <li>Parceria com engenharia para reduzir time-to-market</li>
-      <li>Testes com usuários e iteração quinzenal</li>
-    </ul>
-  </article>
-  <article class="project">
-    <h2>Marketplace B2B</h2>
-    <p>Reposicionamento de produto e lançamento de features core, +18% GMV.</p>
-  </article>
-</section>
+
+<!-- projects.component.html -->
+<nz-row class="projects-wrap" nzJustify="center">
+  <nz-col nzSpan="22" nzXs="24" nzSm="22" nzMd="20" nzLg="18">
+    <h1 class="page-title">Projects</h1>
+    <h4 class="text-center lead">Aqui nasce um belíssimo texto</h4>
+
+    <section *ngFor="let project of projects; let i = index" class="project-card" [class.reverse]="i % 2 === 1">
+      <div class="image-wrap">
+        <img [src]="project.image" [alt]="project.title" />
+      </div>
+
+      <div class="text-wrap">
+        <h2 class="title">{{ project.title }}</h2>
+        <h3 class="subtitle">{{ project.company }}</h3>
+        <p class="desc">{{ project.description }}</p>
+        <a nz-button nzType="primary" [href]="project.link" target="_blank" rel="noopener">
+          Visit project
+        </a>
+      </div>
+    </section>
+  </nz-col>
+</nz-row>
+
+
+
+
 <app-footer></app-footer>
