@@ -1,13 +1,12 @@
-<nz-layout class="app-layout">
+<app-header></app-header>
 
   <!-- Hero Section -->
   <nz-content>
     <section class="hero">
       <div class="hero-container">
-        <img src="assets/natalia-photo.jpg" alt="Natalia Vianna" class="hero-photo" />
         <div class="hero-text">
-          <h1>Natalia Vianna</h1>
-          <h2>Product Manager • SaaS • Fintech • Impact</h2>
+          <h1>O poder de um product manager é encaminhar um projeto pelo lado certo fazendo com que o projeto seja feito de forma eficiente e eficaz</h1>
+          <h2>Tag 1 • Tag 2 • Tag 3 • Tag 4</h2>
           <div class="hero-buttons">
             <a nz-button nzType="primary" routerLink="/projects">View Projects</a>
             <a nz-button href="mailto:natalia.viannao@gmail.com">Contact</a>
@@ -17,60 +16,114 @@
       </div>
     </section>
 
+
     <!-- About Section -->
     <section class="about">
       <nz-row [nzGutter]="16" nzAlign="middle">
-        <nz-col [nzXs]="24" [nzMd]="12">
-          <img src="assets/about-image.jpg" alt="About Natalia" class="about-image" />
+        <nz-col [nzXs]="24" [nzMd]="12" class="img-col">
+          <img src="assets/img/natalia.jpg" alt="About Natalia" class="about-image" />
         </nz-col>
         <nz-col [nzXs]="24" [nzMd]="12">
-          <nz-card nzTitle="About me">
-            <p>
-              I am a Product Manager with 7+ years of experience in digital products and technology.
-              Strong background in fintech, social impact and SaaS, leading cross-functional teams and
-              connecting business strategy to real user needs.
-            </p>
-            <p>
-              My journey blends Agile methods (Scrum, Kanban, OKRs) with a data-driven mindset to
-              prioritize initiatives, scale products and drive measurable results. I have hands-on
-              experience with discovery, roadmaps, stakeholder management and performance metrics that
-              sustain continuous product evolution.
-            </p>
-          </nz-card>
+          <h2><strong>My journey</strong></h2><br>
+          <h3>I am a Product Manager with 7+ years of experience in digital products and technology.
+            Strong background in fintech, social impact and SaaS, leading cross-functional teams and
+            connecting business strategy to real user needs.<br><br>
+            My journey blends Agile methods (Scrum, Kanban, OKRs) with a data-driven mindset to
+            prioritize initiatives, scale products and drive measurable results. I have hands-on
+            experience with discovery, roadmaps, stakeholder management and performance metrics that
+            sustain continuous product evolution.
+          </h3>
+          <div class="hero-buttons">
+            <a nz-button nzType="primary" routerLink="/about">More about</a>
+          </div>
         </nz-col>
       </nz-row>
     </section>
 
-    <!-- Skills / Keywords -->
+
+    <!-- Projects -->
+<section class="projects">
+    <div class="projects-section container">
+      <div class="text-center">
+        <h2><strong>Projetos</strong></h2>
+        <p class="subtitle">Saiba como aconteceu.</p>
+      </div>
+    
+      <div nz-row [nzGutter]="24" class="projects-row">
+        <div nz-col [nzSpan]="8">
+          <nz-card nzHoverable [nzCover]="cover1">
+            <nz-card-meta
+              nzTitle="Projeto 1"
+              nzDescription="Subtítulo do projeto 1">
+            </nz-card-meta>
+          </nz-card>
+          <ng-template #cover1>
+            <img alt="Projeto 1" src="https://via.placeholder.com/400x200" />
+          </ng-template>
+        </div>
+    
+        <div nz-col [nzSpan]="8">
+          <nz-card nzHoverable [nzCover]="cover2">
+            <nz-card-meta
+              nzTitle="Projeto 2"
+              nzDescription="Subtítulo do projeto 2">
+            </nz-card-meta>
+          </nz-card>
+          <ng-template #cover2>
+            <img alt="Projeto 2" src="https://via.placeholder.com/400x200" />
+          </ng-template>
+        </div>
+    
+        <div nz-col [nzSpan]="8">
+          <nz-card nzHoverable [nzCover]="cover3">
+            <nz-card-meta
+              nzTitle="Projeto 3"
+              nzDescription="Subtítulo do projeto 3">
+            </nz-card-meta>
+          </nz-card>
+          <ng-template #cover3>
+            <img alt="Projeto 3" src="https://via.placeholder.com/400x200" />
+          </ng-template>
+        </div>
+      </div>
+    
+      <div class="text-center more-button">
+        <button nz-button routerLink="/projects" nzType="primary">More about projects</button>
+      </div>
+    </div>
+  </section>
+    
+
+
+    <!-- Skills / Keywords
     <section class="skills">
       <nz-card nzTitle="Core Skills & Keywords">
         <div class="tags-container">
           <nz-tag *ngFor="let tag of tags" nzColor="purple">{{ tag }}</nz-tag>
         </div>
       </nz-card>
-    </section>
+    </section> -->
 
-    <!-- Key Achievements -->
+    <!-- Key Achievements
     <section class="achievements">
       <nz-row [nzGutter]="16">
         <nz-col [nzXs]="24" [nzMd]="12" *ngFor="let achievement of achievements">
           <nz-card [nzTitle]="achievement.title" class="achievement-card">
-            <p>{{ achievement.description }}</p>
+            ASD
           </nz-card>
         </nz-col>
       </nz-row>
-    </section>
+    </section> -->
 
-    <!-- Contact / CTA -->
+    <!-- Contact / CTA
     <section class="contact-cta">
       <nz-card nzTitle="Get in touch" class="contact-card">
         <p>Email: <a href="mailto:natalia.viannao@gmail.com">natalia.viannao@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/nataliavianna" target="_blank" rel="noopener">linkedin.com/in/nataliavianna</a></p>
         <p>Phone: <a href="tel:+5521996547228">+55 (21) 99654-7228</a></p>
       </nz-card>
-    </section>
+    </section> -->
 
   </nz-content>
 
   <app-footer></app-footer>
-</nz-layout>

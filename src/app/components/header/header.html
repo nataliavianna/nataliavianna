@@ -1,15 +1,16 @@
 <nz-layout class="app-layout">
-  <nz-header>
-    <div class="logo">
-      <a>
-        <img src="https://ng.ant.design/assets/img/logo.svg" alt="logo">
-        <h1>NG-ZORRO</h1>
-      </a>
-    </div>
-    <ul nz-menu class="top-nav" nzTheme="dark" nzMode="horizontal">
-      <li nz-menu-item routerLinkActive="ant-menu-item-selected" routerLink="/welcome">Home</li>
-      <li nz-menu-item>About</li>
-      <li nz-menu-item>Projects</li>
-    </ul>
-  </nz-header>
+  <nz-content>
+    <nz-header class="header container">
+      <div class="logo">
+        <a>
+          <h1>Natalia Vianna | <label class="gray-text">Product Manager</label></h1>
+        </a>
+      </div>
+      <div class="menu-buttons">
+        <a nz-button nzType="primary" routerLink="/homepage">Home</a>
+        <a nz-button nzType="primary" routerLink="/about">About</a>
+        <a nz-button nzType="primary" routerLink="/projects">Projects</a>
+      </div>
+    </nz-header>
+  </nz-content>
 </nz-layout>

@@ -16,3 +16,30 @@
   text-decoration: underline;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa logo e botões */
+  padding: 0; /* espaço interno opcional */
+}
+
+.logo h1 {
+  color: #2c2004; /* texto branco (se header for escuro) */
+  margin: 0;
+  font-size: 20px;
+}
+
+.menu-buttons a {
+  margin-left: 12px; /* espaço entre os botões */
+}
+
+.ant-layout-header {
+  background: #ffffff;
+}
+.ant-layout {
+  background: #ffffff;
+}
+.gray-text {
+  color:#888;
+  font-size:1rem!important;
+}

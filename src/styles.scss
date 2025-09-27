@@ -1,5 +1,10 @@
 @import 'ng-zorro-antd/ng-zorro-antd.min.css';
 /* You can add global styles to this file, and also import other style files */
+
+.container {
+    max-width: 1200px; /* ou 900px, se preferir mais estreito */
+    margin: 0 auto;    /* centraliza horizontalmente */
+}
 .centered-content {
     max-width: 1200px; /* ou 900px, se preferir mais estreito */
     margin: 0 auto;    /* centraliza horizontalmente */
@@ -20,3 +25,14 @@
   app-homepage {
     width: 100%;
   }
+
+  
+h1, h2, h3, h4, h5 {
+    font-family: 'Lora', serif !important;
+}
+.text-center {
+    text-align:center !important;
+}
+section {
+    padding:100px 0 !important;
+}

@@ -2,9 +2,10 @@
   background: #f5f5f5;
 }
 
+
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #722ed1 0%, #8c5de5 100%);
+  background: linear-gradient(135deg, #d7ca8a 0%, #d4b086 100%);
   color: white;
   padding: 80px 24px;
 
@@ -38,6 +39,7 @@
   .about-image {
     width: 100%;
     border-radius: 8px;
+    max-width:350px
   }
 }
 
@@ -75,4 +77,34 @@
   .contact-card {
     text-align: center;
   }
+}
+.img-col {
+  text-align:center
+}
+
+.projects {
+  background: #e4e4e0;
+}
+.projects-section {
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.projects-section .subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.projects-row {
+  margin-bottom: 40px;
+}
+
+.more-button {
+  margin-top: 20px;
 }
