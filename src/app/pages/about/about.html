@@ -1,19 +1,75 @@
 <app-header></app-header>
 
-  <!-- Hero Section -->
-<nz-content class="container">
-  <section class="about">
-    <h1>Sobre a Natalia</h1>
-    <p>Natalia Vianna é Product Manager com forte atuação em estratégia de produto, discovery contínuo e gestão orientada a dados.</p>
-    <p>
-      Apaixonada por resolver problemas reais de usuários, lidera times multidisciplinares criando produtos que equilibram valor para o negócio e experiência para o cliente.
-    </p>
-    <ul>
-      <li>OKRs, métricas de produto e growth</li>
-      <li>Prioritização (RICE, MoSCoW), roadmap e governança</li>
-      <li>Pesquisa com usuários, JTBD e prototipação</li>
-    </ul>
-  </section>
-</nz-content>
+<nz-row class="about-wrap" nzAlign="middle" nzJustify="center">
+  <nz-col nzSpan="22" nzXs="24" nzSm="20" nzMd="16" nzLg="12">
+
+    <section class="content-card" role="region" aria-labelledby="summary-heading">
+      <h2 class="summary-heading" >Summary</h2>
+      <p class="lead">
+        I am a Product Owner and Project Manager with experience leading cross-functional teams in fintech and social-impact projects.
+        My work blends strategy and hands-on execution: from designing product roadmaps and implementing digital accounts, to running
+        PMOs and delivering UX-driven features for thousands of users.
+      </p>
+
+      <h2 class="summary-heading" >Core strengths</h2>
+      <ul class="bullets">
+        <li>Product strategy & roadmap definition</li>
+        <li>Stakeholder management and PMO reporting</li>
+        <li>Cross-functional delivery with Agile ceremonies</li>
+        <li>Metrics, activation funnels and user growth</li>
+      </ul>
+
+      <h2 class="summary-heading" >Professional highlights</h2>
+      <div class="timeline">
+        <div class="item">
+          <strong>System for philanthropic fund management & digital account app</strong>
+          <div class="desc">Led scoping, prioritization and delivery of a fund-management platform and an accompanying digital account app, impacting thousands of users.</div>
+        </div>
+
+        <div class="item">
+          <strong>Leadzone — sales management for bars & restaurants</strong>
+          <div class="desc">Launched the first customer and iterated product according to real-world feedback from small hospitality clients.</div>
+        </div>
+
+        <div class="item">
+          <strong>Operations with Dimensa for UNHCR project</strong>
+          <div class="desc">Coordinated card delivery logistics and activation workflows for a humanitarian client.</div>
+        </div>
+
+        <div class="item">
+          <strong>Content & community</strong>
+          <div class="desc">Creator of Folha Continental, a portal focused on tech guides and product reviews; organized recurring community events and produced practical content for creators.</div>
+        </div>
+      </div>
+
+      <h2 class="summary-heading" >Education</h2>
+      <p class="small">
+        Degree in Social Communication. Currently (or recently) studying an MBA in Project Management & Agile Methodologies.
+      </p>
+
+      <h2 class="summary-heading" >Extras</h2>
+      <p class="small">
+        I like to keep projects lean, data-informed and user-centered. I mentor junior PMs, run interview simulations for product roles, and enjoy building MVPs that prove real value fast.
+      </p>
+
+      
+    <section class="intro-card" role="region" aria-labelledby="about-title">
+      <h1 id="about-title" class="title">Natália Vianna</h1>
+      <p class="subtitle">Product Owner & Project Manager — building digital products that connect people and impact.</p>
+
+      <div class="action-row">
+        <a nz-button nzType="default" [href]="cvPt" download aria-label="Download CV in Portuguese">
+          Download CV (PT)
+        </a>
+        <a nz-button nzType="primary" [href]="cvEn" download aria-label="Download CV in English">
+          Download CV (EN)
+        </a>
+      </div>
+    </section>
+
+    </section>
+  </nz-col>
+</nz-row>
+
 
 <app-footer></app-footer>

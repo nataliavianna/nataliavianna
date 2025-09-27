@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+// import { RouterLink } from '@angular/router';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzCardModule } from 'ng-zorro-antd/card';
@@ -13,10 +13,16 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 
 @Component({
   selector: 'app-about',
-  imports: [RouterLink, NzPageHeaderModule, NzGridModule, NzCardModule, NzTagModule, NzListModule, NzButtonModule, NzLayoutModule, Header, Footer],
+  imports: [NzPageHeaderModule, NzGridModule, NzCardModule, NzTagModule, NzListModule, NzButtonModule, NzLayoutModule, Header, Footer],
   templateUrl: './about.html',
   styleUrl: './about.scss'
 })
 export class About {
+  // Replace these with actual URLs to your PDF files
+  cvPt = '/assets/cv-natalia-pt.pdf';
+  cvEn = '/assets/cv-natalia-en.pdf';
 
+  // Basic contact / social links that you can replace
+  email = 'mailto:your.email@example.com';
+  linkedin = 'https://www.linkedin.com/in/natalia-vianna/';
 }

@@ -1,3 +1,139 @@
-body {
-  width:100%
+$max-width: 1000px;
+$radius: 12px;
+$muted: #6b6b6b;
+
+.about-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-card {
+  background: transparent;
+  text-align: left;
+  margin-bottom: 28px;
+
+  .title {
+    font-size: 2.25rem; /* large */
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    font-size: 1.125rem; /* medium */
+    color: $muted;
+    margin: 0 0 18px 0;
+  }
+
+  .action-row {
+    display: flex;
+    gap: 12px;
+
+    a[nz-button] {
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 10px;
+      box-shadow: none;
+      font-size: 0.98rem;
+    }
+
+    a[nz-button][nzType="primary"] {
+      box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+    }
+  }
+}
+
+/* Content card */
+.content-card {
+  margin-top: 6px;
+  background: #fff;
+  padding: 28px;
+  max-width: $max-width;
+
+  .section-heading {
+    font-size: 1.125rem;
+    margin: 14px 0 10px;
+    font-weight: 600;
+  }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #222;
+    margin-bottom: 12px;
+  }
+
+  .section-sub {
+    font-size: 1rem;
+    margin-top: 18px;
+    font-weight: 600;
+  }
+
+  .bullets {
+    margin: 8px 0 12px 18px;
+    padding: 0;
+    color: $muted;
+    li {
+      margin: 6px 0;
+      font-size: 0.995rem;
+      line-height: 1.5;
+    }
+  }
+
+  .timeline {
+    margin: 6px 0 14px;
+
+    .item {
+      padding: 15px 0 10px 20px;
+      margin: 15px 0;
+      border-left: 3px solid rgba(24, 168, 58, 0.588);
+      &:last-child {
+        border-bottom: none;
+      }
+
+      strong {
+        display: block;
+        font-size: 1.01rem;
+        font-weight: 600;
+      }
+
+      .desc {
+        font-size: 0.98rem;
+        color: $muted;
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .small {
+    color: $muted;
+    font-size: 0.96rem;
+    margin: 6px 0 10px;
+  }
+
+  .contact-row {
+    margin-top: 18px;
+    .link {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+      font-size: 0.995rem;
+    }
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .intro-card .title {
+    font-size: 1.8rem;
+  }
+  .content-card {
+    padding: 20px;
+  }
+}
+
+
+.summary-heading {
+  margin-top:50px !important
 }
